@@ -1,4 +1,5 @@
 import styles from "./MealItem.module.css";
+import MealItemForm from "./MealItemForm";
 
 export default function MealItem({ meal }) {
   const price = `$${meal.price.toFixed(2)}`;
@@ -9,7 +10,9 @@ export default function MealItem({ meal }) {
         <div className={styles.description}>{meal.description}</div>
         <div className={styles.price}>{price}</div>
       </div>
-      <div></div>
+      <div>
+        <MealItemForm />
+      </div>
     </li>
   );
 }
