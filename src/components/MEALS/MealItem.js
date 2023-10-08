@@ -19,8 +19,8 @@ export default function MealItem(props) {
   return (
     <li className={styles.meal}>
       <div>
-        <h3>{meal.name}</h3>
-        <div className={styles.description}>{meal.description}</div>
+        <h3>{props.meal.name}</h3>
+        <div className={styles.description}>{props.meal.description}</div>
         <div className={styles.price}>{price}</div>
       </div>
       <div>
